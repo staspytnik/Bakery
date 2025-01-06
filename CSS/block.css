@@ -1,0 +1,49 @@
+.content {
+    width: 450px;/* ширина елементу*/
+    height: 300px;/* висота елементу*/
+    background-color: greenyellow;
+
+    /*?внутрішній відступ */
+    /*padding: 32px;*/
+    /*padding-top: 32px;
+    padding-left: 40px;*/
+    padding: 20px 16px;
+
+    /*?зовнішні відступи*/
+    /*margin: 50px;
+    margin-bottom: 20px;
+    margin-right: 40px;*/
+    margin: 32px 20px 15px 14px;
+
+    box-sizing: border-box;
+    border-color: palevioletred;
+    border-width: 10px;
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-top-style: dotted;
+    border-right-style: double;
+    border-style: dotted double;
+
+    border: 3px inset palevioletred;
+
+    /*? значення яке розташовує елементи в одному рядку один за одним, доки в ньому вистачить місця */
+    /*display: inline;*/
+    /*? Блокові елементи (block)​: візуально - це прямокутні області, що йдуть одна за одною зверху вниз*/
+    /*display: block;*/
+    /*? Інлайн-блокові елементи (inline-block) - гібрид між блоковими та рядковими елементами, який взяв все найкраще від обох (елементи розташовуються в рядку один за одним та мають властивості width і height які ми задаємо)*/
+    display: inline-block;
+}
+
+.item-1 {
+    display: none;
+}
+
+.object {
+    width: 200px;
+    height: 150px;
+    background-color: tan;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
