@@ -13,6 +13,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     width: 1170px;
     margin: auto;
@@ -32,6 +37,7 @@ body {
     font-weight: 500;
     font-size: 15px;
     color: var(--text);
+    cursor: pointer;
 }
 
 .hero-title {
@@ -60,6 +66,7 @@ body {
     border-width: 1px;
     border-color: #bfbfbf;
     border-style: solid;
+    background-color: transparent;
 }
 
 .header-link {
@@ -67,14 +74,46 @@ body {
     text-decoration: none;
 }
 
+.header-link:hover {
+    color: #f98f43;
+}
 
+.header-item:hover {
+    color: #f98f43;
+}
 
+.header-link:active {
+    color: #c97235;
+}
 
+.header-item:active {
+    color: #c97235;
+}
 
+.container {
+    display: flex;
+    align-items: center; /*? Вирівнює по вертикалі елементи*/
+    justify-content: space-between;
+}
 
+.header-list {
+    display: flex;
+    list-style-type: none;/*? Видаляє маркери списку*/
+    gap: 40px;/*? відступи між елементами*/
 
+}
 
+.content-list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
 
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
 
 
 

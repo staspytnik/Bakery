@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    flex-direction: row; /*! задали головний напрямок осі */
+    justify-content: space-between;
+    list-style-type: none;
+
+/*?    управляє позиціонуванням елементів на головній осі від main-start до main-end, тобто вирівнює flex-елементи по ширині flex-контейнера, розподіляючи вільний простір, що залишився, незайнятий flex-елементами: justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly */
+
+}
