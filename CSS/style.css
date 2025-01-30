@@ -115,9 +115,16 @@ ul {
     gap: 60px;
 }
 
+.section-ul {
+    display: flex;
+    list-style-type: none;
+}
 
-
-
+.offers-list {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
 
 
 

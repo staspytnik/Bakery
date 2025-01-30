@@ -7,3 +7,29 @@
 /*?    управляє позиціонуванням елементів на головній осі від main-start до main-end, тобто вирівнює flex-елементи по ширині flex-контейнера, розподіляючи вільний простір, що залишився, незайнятий flex-елементами: justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly */
 
 }
+
+
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: goldenrod;
+}
+
+.boxes {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /*? flex-wrap управляє тим, як flex-контейнер буде розташовувати flex-елементи - в один ряд або в декілька та напрямком, в якому будуть розташовуватись нові рядки.*/
+    justify-content: space-between;
+    height: 1600px;
+    align-content: space-between; /*? вирівнює лінії контейнера flex в flex-контейнері за наявності додаткового простору на перехресній осі, тобто управляє вирівнюванням всіх рядків багаторядкового контейнера вздовж поперечної осі, якщо є вільне місце. */
+    
+}
+
+.box:nth-child(2n) {
+    background-color: tomato;
+}
+
+
