@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
     box-sizing: border-box; 
@@ -7,6 +6,8 @@
 
 :root {
     --text: #1f1f1f;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Cormorant", sans-serif;
 }
 
 body {
@@ -90,11 +91,6 @@ ul {
     color: #c97235;
 }
 
-.container {
-    display: flex;
-    align-items: center; /*? Вирівнює по вертикалі елементи*/
-    justify-content: space-between;
-}
 
 .header-list {
     display: flex;
@@ -126,22 +122,114 @@ ul {
     list-style-type: none;
 }
 
+.offers-prices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.offers-product-name {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+.offers-product-price {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ff8126;
+    margin: 0;
+}
+
+.offers-img {
+    border-radius: 20px 20px 0 0;
+    width: 270px;
+    height: 160px;
+}
+
+.offers-product-old-price {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.title {
+    font-family: var(--second-family);
+    font-weight: 700;
+font-size: 40px;
+text-align: center;
+color: #1f1f1f;
+}
+
+.title span {
+    color: #ff8126;
+}
+
+.offers-products {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px 110px;
+  }
+  .offers-prices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+  }
+  .offers-product-old-price {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #656565;
+  }
+  .offers-product-price {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ff8126;
+    margin: 0;
+  }
+  .offers-product-name {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #1f1f1f;
+  }
+
+  .offers-product-image {
+    border-radius: 20px 20px 0 0;
+    width: 270px;
+    height: 160px;
+  }
+  .offers-product {
+    width: 270px;
+    height: 332px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    background: #f7f5f0;
+  }
+
+.offers-product-btn {
+    border-radius: 5px;
+    width: 230px;
+    height: 40px;
+    background: #ff8126;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+}
 
 
 
+.section-title {
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

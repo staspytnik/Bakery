@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 .menu {
     display: flex;
     flex-direction: row; /*! задали головний напрямок осі */
@@ -32,4 +37,133 @@
     background-color: tomato;
 }
 
+.item {
+    background-color: lightgreen;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid rgb(65, 197, 83);
+}
 
+.order-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item:nth-child(1) {
+    order: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.flex-grow {
+    display: flex;
+    gap: 30px;
+}
+
+/*.item {
+    flex-grow: 0;
+}
+*/
+.flex-grow .item:nth-child(2) {
+    flex-grow: 52;
+}
+
+.shrink-item {
+    width: 500px;
+    height: 500px;
+    background-color: silver;
+    flex-shrink: 2;
+}
+
+.shrink-img {
+    /*flex-shrink: 0; */
+    
+}
+
+.flex-shrink {
+    display: flex;
+    width: 600px;
+   /* width: 80%;
+    max-width: 800px;
+    border: 1px solid black;*/
+}
+
+.flex-shrink .item {
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+/*
+.flex-shrink .item:last-child {
+    flex-shrink: 0;
+}
+*/
+.flex-basis {
+    display: flex;
+    
+}
+
+.flex-basis .item {
+    background-color: aquamarine;
+    flex-basis: 0;
+    /*width: 150px;*/
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.align-self {
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    align-items: flex-start;
+}
+
+.align-self .item:last-child {
+    align-self: flex-end;
+}
+
+.container-squares {
+    display: flex;
+}
+
+#one {
+    flex: 2 1 300px;
+    background-color: coral;
+}
+
+#two {
+    flex: 1 2 300px;
+    background-color: aquamarine;
+}
+/*
+.card {
+    border: 3px solid pink;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: mistyrose;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+*/
+.card {
+    border: 3px solid pink;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: mistyrose;
+}
+
+.cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
